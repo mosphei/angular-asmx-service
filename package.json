@@ -1,0 +1,19 @@
+{
+  "name": "jarom-asmx-service",
+  "version": "1.0.0",
+  "description": "Angular module to connect asmx services",
+  "main": "asmx.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js --single-run",    
+    "build": "cross-env NODE_ENV=production webpack src/asmx.js dist/asmx.js"
+  },
+  "author": "Jarom Burbano",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-mocks": "^1.6.6",
+    "cross-env": "^5.0.5",
+    "webpack": "^3.6.0"
+  }
+}
