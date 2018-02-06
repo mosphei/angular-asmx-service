@@ -1,11 +1,12 @@
 {
   "name": "jarom-asmx-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular module to connect asmx services",
+  "repository": "git@github.com:mosphei/angular-asmx-service.git",
   "main": "asmx.js",
   "scripts": {
     "test": "karma start karma.conf.js",
-    "test-single-run": "karma start karma.conf.js --single-run",    
+    "test-single-run": "karma start karma.conf.js --single-run",
     "build": "cross-env NODE_ENV=production webpack src/asmx.js dist/asmx.js"
   },
   "author": "Jarom Burbano",
@@ -14,6 +15,12 @@
     "angular": "^1.6.6",
     "angular-mocks": "^1.6.6",
     "cross-env": "^5.0.5",
+    "jasmine-core": "^2.9.1",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-junit-reporter": "^1.2.0",
     "webpack": "^3.6.0"
   }
 }
