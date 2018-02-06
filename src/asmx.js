@@ -32,7 +32,9 @@ angular.module("jarom.asmx", [])
 				var newObj = processObject(rows[i]);
 				retval.push(newObj);
 			} else {
-				retval.push(rows[i]);
+				var newPrimitive = processPrimitiveTypes(rows[i]);
+				console.log('newPrimitive=' + newPrimitive);
+				retval.push(newPrimitive);
 			}
 		}
 		return retval;
