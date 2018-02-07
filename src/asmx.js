@@ -1,6 +1,6 @@
 angular.module("jarom.asmx", [])
 .provider("asmx", function () {
-	var ApiUrl = null;
+	var ApiUrl = "";
 	this.setApiUrl = function (value) {
 		ApiUrl = value;
 		//console.log("setApiUrl " + value);
